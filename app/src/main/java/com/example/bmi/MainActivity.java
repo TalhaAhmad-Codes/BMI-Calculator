@@ -97,26 +97,16 @@ public class MainActivity extends AppCompatActivity {
         txtBmiValue.setText(value);
 
         // Update the status text
-        if (bmi < 18.5) {
-            txtStatus.setText("Underweight");
-        } else if (bmi >= 18.5 && bmi < 24.9) {
-            txtStatus.setText("Normal Weight");
-        } else if (bmi >= 25 && bmi < 29.9) {
-            txtStatus.setText("Overweight");
-        } else {
+        if (bmi > 30.0) {
             txtStatus.setText("Obese");
         }
-
-        if (bmi > 30.0){
-            txtStatus.setText("Obese");
-        }
-        else if (bmi > 25.0){
+        else if (bmi > 25.0) {
             txtStatus.setText("Overweight");
         }
-        else if (bmi > 18.5){
+        else if (bmi > 18.5) {
             txtStatus.setText("Healthy Weight");
         }
-        else{
+        else {
             txtStatus.setText("Underweight");
         }
     }

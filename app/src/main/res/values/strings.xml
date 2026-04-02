@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">BMI</string>
     <string name="title">BMI Calculator</string>
+    <string name="creator">Talha Ahmad</string>
     
     <string name="weight">Weight (kg)</string>
     <string name="heightf">Height (feet)</string>
